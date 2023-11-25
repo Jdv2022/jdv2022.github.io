@@ -22,9 +22,9 @@ $(window).scroll(function(){
 |   Ajax                    
 */
 const accessToken = 'hardCodedHehe';
-console.log('this is executed outside')
+console.log('this is executed outside');
 if($('html').is(':visible')){ 
-    console.log('This is executed!)
+    console.log('This is executed!);
     $.ajax({    
         url: 'https://api-visit.jdv2022-projects.tech',
             method: 'POST',
