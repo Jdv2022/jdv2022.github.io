@@ -22,7 +22,7 @@ $(window).scroll(function(){
 |   Ajax                    
 */
 const accessToken = 'hardCodedHehe';
-console.log('this is executed outside)
+console.log('this is executed outside')
 if($('html').is(':visible')){ 
     console.log('This is executed!)
     $.ajax({    
