@@ -1,12 +1,20 @@
 
 @keyframes colorRunning {
     0% {
-      background-position: right; 
+      background-position: right bottom; 
     }
     100% {
-      background-position: left; 
+      background-position: left bottom; 
     }
 }
 
+@keyframes colorRunningReverse {
+  0% {
+    background-position: left bottom; 
+  }
+  100% {
+    background-position: right bottom; 
+  }
+}
 
 

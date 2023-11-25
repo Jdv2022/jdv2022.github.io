@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@import url("animation.css");
+
+@font-face{
+    font-family: 'nav-font';
+    src: url('../texts/Sono-VariableFont_MONO,wght.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'header-font';
+    src: url('../texts/static/KantumruyPro-Thin.ttf') format('truetype');
+}
+
+.smooch-texts{
+    font-family: "nav-font", sans-serif;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.nav-r-text{
+    font-family: "nav-font", sans-serif;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+.font-header{
+    font-family: "header-font", sans-serif;
+}
+
+/* Buttons */
+.button{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid rgb(255, 255, 173);
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.button {
+    border-color: #f1c40f;
+    color: #fff;
+    background: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 300ms ease-in-out;
+}
+
+.button:hover {
+    background-position: 0%;
+    color: black;
+}
+
+
+
+
+

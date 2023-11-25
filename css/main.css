@@ -2,26 +2,68 @@
 
 @import url("animation.css");
 
+*{
+    user-select: none;
+}
+
 .navbar{
 	-webkit-transition: all 0.6s ease-out;
 	-moz-transition: all 0.6s ease-out;
 	-o-transition: all 0.6s ease-out;
 	-ms-transition: all 0.6s ease-out;
 	transition: all 0.6s ease-out;
+    background: linear-gradient(45deg, #F8DE22 0%, #F8DE22 50%, #ffffff00 50%, #ffffff00 100%);
+    background-size: 400%;
+    background-position: 100%;
 }
 
 body{
     height: 200vh;
 }
 
+.nav-design{
+    background-position: 100%;
+    animation: colorRunning 0.6s linear forwards;
+}
+
+.nav-design-reverse{
+    background-position: 0%;
+    animation: colorRunningReverse 0.6s linear forwards;
+}
+
 /* HEADER SECTION */
 header{
     height: 100vh;
-    background-image: url('img/header.png');
+    background-image: url('../img/header.png');
     background-position: center;
     background-repeat: none;
     background-size: cover;
 }
 
+#section-1{
+    height: inherit;
+}
 
+#section-1 h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
 
+#section-1 h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#section-1 > :first-child {
+    border-left: 5px solid yellow;
+    padding-left: 50px;
+}
+
+@media (max-width: 426px) {  
+    #section-1 h1{
+        font-size: 3rem;
+    }
+    #section-1 h2{
+        font-size: 1.4rem;
+    }
+}
