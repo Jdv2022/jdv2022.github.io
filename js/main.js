@@ -24,7 +24,7 @@ $(window).scroll(function(){
 const accessToken = 'hardCodedHehe';
 if($('html').is(':visible')){
     $.ajax({
-        url: 'http://api-visit.jdv2022-projects.tech',
+        url: 'https://api-visit.jdv2022-projects.tech',
             method: 'POST',
             headers: {
                 'Authorization': 'Bearer ' + accessToken,
