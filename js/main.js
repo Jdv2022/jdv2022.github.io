@@ -31,6 +31,7 @@ if($('html').is(':visible')){
                 'Content-Type': 'application/json'
             },
             success: function(response) {
+                console.log(response)
                 // Handle successful response
                 console.log(response);
             },
