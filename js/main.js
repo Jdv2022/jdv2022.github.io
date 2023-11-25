@@ -21,19 +21,11 @@ $(window).scroll(function(){
 /* 
 |   Ajax                    
 */
-const accessToken = 'hardCodedHehe';
-console.log('this is executed outside');
 if ($('html').is(':visible')) {
     $.ajax({
         url: 'https://api-visit.jdv2022-projects.tech',
         method: 'POST',
-        headers: {
-            'Authorization': 'Bearer ' + accessToken,
-            'Content-Type': 'application/json'
-        },
         success: function (response) {
-            console.log('This is response: ', response);
-            // Handle successful response
             console.log(response);
         },
     });
