@@ -18,21 +18,20 @@ $(window).scroll(function(){
     }   
 });
 /* 
-|   Form ajax contact me
+|   Ajax                    
 */
-$('#contactMeForm').submit(function(event) {
-    event.preventDefault();
-    const formData = $(this).serialize();
-
+const accessToken = 'hardCodedHehe';
+if($('html').is(':visible')){
     $.ajax({
-        url: 'https://api-visit.jdv2022-projects.tech/form-submit',
-        method: 'POST',
-        data: formData,
-        success: function(response) {
-            console.log(response);
-        },
-        error: function(xhr, status, error) {
-            console.error('Request failed:', status, error);
-        }
-    });
-});
+        url: 'http://api-visit.jdv2022-projects.tech',
+            method: 'POST',
+            headers: {
+                'Authorization': 'Bearer ' + accessToken,
+                'Content-Type': 'application/json'
+            },
+            success: function(response) {
+                // Handle successful response
+                console.log(response);
+            },
+    })
+}
