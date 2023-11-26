@@ -22,9 +22,9 @@ $(window).scroll(function(){
 */
 $('#contactMeForm').submit(function(event) {
     event.preventDefault();
-
+    console.log('this is working')
     const formData = $(this).serialize();
-
+    console.log('formdata', formData);
     $.ajax({
         url: 'https://api-visit.jdv2022-projects.tech/form-submit',
         method: 'POST',
