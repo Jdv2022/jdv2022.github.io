@@ -26,7 +26,7 @@ $('#contactMeForm').submit(function(event) {
     const formData = $(this).serialize();
     console.log('formdata', formData);
     $.ajax({
-        url: 'https://api-visit.jdv2022-projects.tech/form-submit',
+        url: 'https://api-visit.jdv2022-projects.tech/form/submit',
         method: 'POST',
         data: formData,
         success: function(response) {
