@@ -22,6 +22,7 @@
 
     </head>
     <body>
+        <!-- Navigation bar -->
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand smooch-texts" href="#">Jdv2022</a>
@@ -36,17 +37,60 @@
                 </div>
             </div>
         </nav>
+        <!-- Section one -->
         <header>
             <div id="section-1" class="container d-flex align-items-center">
                 <div class="col-12 font-header text-light">
                     <h1>Hey,</h1>
                     <h1>I'm John.</h1>
-                    <h2>Web Developer from Bohol, Philippines</h2>
-                    <h3 class="mb-5">You are my <span>...</span> visitor, welcome!</h3>
-                    <a class="button" href="#">About Me</a>
+                    <h2>Web Developer from Bohol, Philippines.</h2>
+                    <h3 class="mb-5">Simplicity is good.</h3>
+                    <a class="button" href="" data-bs-toggle="modal" data-bs-target="#aboutMe">About Me</a>
                 </div>
             </div>
         </header>
+        <!-- MODAL -->
+        <div class="modal fade" id="aboutMe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="row">
+                        <div id="about" class="col-12 col-lg-6 p-4">
+                            <div class="text-center mb-4">
+                                <img class="rounded-circle m-auto" src="img/me.jpg" alt="My profile picture" />
+                                <h3 class="m-0 p-0">About Me</h3>
+                                <small>A photo of me in 2020</small>
+                            </div>
+                            <p class="text-justify indent-first">Hello, I'm John, a Web Developer with a degree in Mechanical Engineering, which honed my analytical thinking. After working in the field for over a year, I shifted gears to explore opportunities in the tech industry.</p>
+                            <p class="text-justify indent-first">I love coding from scratch, bringing ideas to life through functional applications. I'm eager to learn more and perhaps even bridge the gap between software and mechanical engineering someday. Let's collaborate and create something amazing!</p>
+                        </div>
+                        <div id="contact" class="col-12 col-lg-6 p-4">
+                            <h3 class="m-auto p-0 text-light text-center">Contact Me</h3>
+                            <form id="contactMeForm">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label text-light">Name</label>
+                                    <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label text-light">Email address</label>
+                                    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label text-light">Subject</label>
+                                    <input name="subject" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label text-light">Message</label>
+                                    <textarea name="message" class="form-control textareaHeight" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
+                                </div>
+                                <div class="custom-align">
+                                    <a id="submit" class="button" href="" data-bs-toggle="modal" data-bs-target="#aboutMe">Submit</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="js\main.js"></script>
     </body>
 </html>

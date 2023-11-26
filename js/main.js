@@ -17,22 +17,22 @@ $(window).scroll(function(){
         $('.smooch-texts').css('color', 'black');
     }   
 });
-
 /* 
-|   Ajax                    
+|   Form ajax contact me
 */
-const accessToken = 'hardCodedHehe';
-if($('html').is(':visible')){
+$('#contactMeForm').submit(function(event) {
+    event.preventDefault();
+    const formData = $(this).serialize();
+
     $.ajax({
-        url: 'http://api-visit.jdv2022-projects.tech',
-            method: 'POST',
-            headers: {
-                'Authorization': 'Bearer ' + accessToken,
-                'Content-Type': 'application/json'
-            },
-            success: function(response) {
-                // Handle successful response
-                console.log(response);
-            },
-    })
-}
+        url: 'https://api-visit.jdv2022-projects.tech/form-submit',
+        method: 'POST',
+        data: formData,
+        success: function(response) {
+            console.log(response);
+        },
+        error: function(xhr, status, error) {
+            console.error('Request failed:', status, error);
+        }
+    });
+});

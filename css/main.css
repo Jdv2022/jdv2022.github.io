@@ -5,7 +5,17 @@
 *{
     user-select: none;
 }
-
+/* 
+|   Commons
+*/
+header, #about, #contact{
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+/* 
+|   Nav
+*/
 .navbar{
 	-webkit-transition: all 0.6s ease-out;
 	-moz-transition: all 0.6s ease-out;
@@ -17,9 +27,6 @@
     background-position: 100%;
 }
 
-body{
-    height: 200vh;
-}
 
 .nav-design{
     background-position: 100%;
@@ -28,16 +35,16 @@ body{
 
 .nav-design-reverse{
     background-position: 0%;
-    animation: colorRunningReverse 0.6s linear forwards;
+    animation: colorRunningReverse 0.3s linear forwards;
+}
+body{
+    height: 200vh;
 }
 
 /* HEADER SECTION */
 header{
     height: 100vh;
     background-image: url('../img/header.png');
-    background-position: center;
-    background-repeat: none;
-    background-size: cover;
 }
 
 #section-1{
@@ -66,4 +73,17 @@ header{
     #section-1 h2{
         font-size: 1.4rem;
     }
+}
+
+/* 
+|   Modal
+*/
+#about{
+    background-image: url('../img/aboutMe.png');
+}
+#aboutContainer{
+    width: 50%;
+}
+#contact{
+    background-image: url('../img/contact.png');
 }

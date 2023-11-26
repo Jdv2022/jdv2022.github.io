@@ -52,7 +52,19 @@
     color: black;
 }
 
+.indent-first {
+    text-indent: 20px; 
+}
 
+.textareaHeight{
+    height: 140px;
+    resize: none;
+}
+
+.custom-align{
+    padding-top: 20px;
+    text-align: center;
+}
 
 
 
