@@ -22,15 +22,18 @@ $(window).scroll(function(){
 */
 $('#contactMeForm').submit(function(event) {
     event.preventDefault();
-    console.log('this is working')
     const formData = $(this).serialize();
-    console.log('formdata', formData);
     $.ajax({
         url: 'https://api-visit.jdv2022-projects.tech/form/submit',
         method: 'POST',
         data: formData,
         success: function(response) {
-            console.log(response);
+            if(response['message'] === 'Success'){
+                $('#success').modal();
+            }
+            else{
+                $('failed').modal();
+            }
         },
         error: function(xhr, status, error) {
             console.error('Request failed:', status, error);
