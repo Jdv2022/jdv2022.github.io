@@ -29,10 +29,10 @@ $('#contactMeForm').submit(function(event) {
         data: formData,
         success: function(response) {
             if(response['message'] === 'Success'){
-                $('#success').modal();
+                $('#success').show();
             }
             else{
-                $('failed').modal();
+                $('#failed').show();
             }
         },
         error: function(xhr, status, error) {
