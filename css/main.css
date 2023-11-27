@@ -8,10 +8,11 @@
 /* 
 |   Commons
 */
-header, #about, #contact{
+header, #about, #contact, #section-experience{
     background-position: center;
     background-repeat: none;
     background-size: cover;
+    background-attachment: fixed;
 }
 /* 
 |   Nav
@@ -38,7 +39,7 @@ header, #about, #contact{
     animation: colorRunningReverse 0.3s linear forwards;
 }
 body{
-    height: 200vh;
+    height: 100vh;
 }
 
 /* HEADER SECTION */
@@ -73,6 +74,56 @@ header{
     #section-1 h2{
         font-size: 1.4rem;
     }
+}
+
+/* 
+|   Section - experience
+*/
+#section-experience{
+    min-height: 100vh;
+    background-image: url('../img/experience-bg.png');
+}
+
+.blur-bg{
+    position: relative;
+    border: 2px solid transparent;
+    z-index: 1;
+}
+
+.blur-bg::before {
+    content: attr(data-label);
+    position: absolute;
+    top: -20px;
+    left: 95px;
+    transform: translateX(-50%);
+    padding: 0 8px;
+    background-color: #F8DE22; 
+    z-index: 2;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.glass{
+    color: white;
+    background-color: rgba(128, 128, 128, 0.485);
+    backdrop-filter: blur(10px);
+}
+
+.expi-card > h3{
+    font-size: 1.5rem;
+    margin: 10px 0px 5px;
+    font-weight: bold;
+}
+
+.expi-card > h4{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.expi-card > p{
+    font-size: 1rem;
 }
 
 /* 

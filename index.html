@@ -17,7 +17,10 @@
             jdv2022 | Software Developer
         </title>
 
+        <link rel = "preload" href = "css\main.css" as = "style">
         <link href="css\main.css" rel="stylesheet">
+
+        <link rel = "preload" href = "css\utility.css" as = "style">
         <link href="css\utility.css" rel="stylesheet">
 
     </head>
@@ -25,20 +28,20 @@
         <!-- Navigation bar -->
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand smooch-texts" href="#">Jdv2022</a>
+                <a class="navbar-brand smooch-texts" href="#header">Jdv2022</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <span class="me-auto mb-2 mb-lg-0"></span>
-                    <a href="#" class="mx-3 text-decoration-none d-block d-lg-inline nav-r-text mt-2 mt-lg-0">.skills()</a>
+                    <a href="#section-experience" class="mx-3 text-decoration-none d-block d-lg-inline nav-r-text mt-2 mt-lg-0">.experience()</a>
                     <a href="#" class="mx-3 text-decoration-none d-block d-lg-inline nav-r-text mt-2 mt-lg-0">.projects()</a>
-                    <a href="#" class="mx-3 text-decoration-none d-block d-lg-inline nav-r-text mt-2 mt-lg-0">.experience()</a>
+                    <a href="#" class="mx-3 text-decoration-none d-block d-lg-inline nav-r-text mt-2 mt-lg-0">.skills()</a>
                 </div>
             </div>
         </nav>
-        <!-- Section one -->
-        <header>
+        <!-- Header -->
+        <header id="header">
             <div id="section-1" class="container d-flex align-items-center">
                 <div class="col-12 font-header text-light">
                     <h1>Hey,</h1>
@@ -49,22 +52,103 @@
                 </div>
             </div>
         </header>
-        <!-- MODAL -->
+        <!-- Main -->
+        <main>
+            <!-- Section Experience -->
+            <div id="section-experience" >
+                <div class="pt-5 pb-5 p-5">
+                    <h2 class="mb-5 titles-r-text text-light">Jdv2022.experience()</h2>
+                    <div class="row row-cols-1 row-cols-md-4 g-4">
+                        <div class="col blur-bg" data-label="June 2014 - May 2020">
+                            <div class="card h-100 glass">
+                                <div class="card-body expi-card">
+                                    <h3>Mechanical Engineering</h3>
+                                    <h4>Bohol Island State University</h4>
+                                    <p class="card-text">Logical thinking, structured problem solving, and analyze systems and processes.</p>
+                                    <ul>
+                                        <li>Problem-solving Skills</li>
+                                        <li>Analytical Thinking</li>
+                                        <li>Adaptability and Continuous Learning</li>
+                                        <li>Attention to Detail and Precision</li>
+                                    </ul>
+                                    <p class="m-0">Thesis: Corn Sheller with Rolling Crusher</p>
+                                    <p>Our team conceptualized, designed, and successfully developed an affordable, functional mechanical corn sheller. By targeting areas where traditional manual methods persisted due to lack of access, our innovation sought to alleviate labor-intensive tasks and enhance agricultural efficiency.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col blur-bg" data-label="April 2019 - June 2019">
+                            <div class="card h-100 glass">
+                                <div class="card-body expi-card">
+                                    <h3>On-the-Job Training</h3>
+                                    <h4>MODAIR</h4>
+                                    <p class="card-text">I was part of the on-the-job training program on a nickel mining company. I experience firsthand to the mining and production process of raw materials essential for manufacturing batteries and various other applications. </p>
+                                    <p>Insightful Industry Experience</p>
+                                    <ul>
+                                        <li>Prioritizing Safety and Compliance</li>
+                                        <li>Punctuality and Attention to Detail</li>
+                                        <li>Challenges and Growth</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col blur-bg" data-label="Oct. 2021 - Dec. 2022">
+                            <div class="card h-100 glass">
+                                <div class="card-body expi-card">
+                                    <h3>Field Engineer</h3>
+                                    <h4>Albatech Engineering</h4>
+                                    <p>As a field engineer it is my most priority the quality and on time delivery of the project. Having a clear plan and coordination is vital for the success of the project.</p>
+                                    <p>Daily Operations</p>
+                                    <ul>
+                                        <li>Crew meeting</li>
+                                        <li>Scheduling and Planning</li>
+                                        <li>Weekly site meetings</li>
+                                        <li>Meeting with clients to addrress concerns</li>
+                                        <li>Documenting the project status ensuring it is at most quality and on time</li>
+                                    </ul> 
+                                    <p>Key Learnings</p>
+                                    <p>This experience was a pivotal learning ground, emphasizing the significance of:</p>
+                                    <ul>
+                                        <li>Team Dynamics</li>
+                                        <li>Effective Communication</li>
+                                        <li>Collaborative Approach</li>
+                                        <li>Proactive Initiatives</li>
+                                    </ul>                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col blur-bg" data-label="Jan. 2023 - Dec. 2023">
+                            <div class="card h-100 glass">
+                                <div class="card-body expi-card">
+                                    <h3>Self Study</h3>
+                                    <h4>Career Break/Shift</h4>The practice of mechanical engineering revolves around physics while software development on logic. The shift in my career path has a lot of challenges but rich in learning experiences. During this phase, I dedicated myself to a period of intensive self-study, aiming to broaden my skill set and delve into the realm of programming fundamentals.</p>
+                                    <p class="card-text">This learning journey was a gateway to understanding the logic behind software development. It was a period of self-discovery, where I honed my problem-solving skills and cultivated a strong foundation in coding principles.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- MODALS -->
         <div class="modal fade" id="aboutMe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="row">
                         <div id="about" class="col-12 col-lg-6 p-4">
+                            <p type="button" class="btn-close max-right d-md-none" data-bs-dismiss="modal" aria-label="Close"></p>
                             <div class="text-center mb-4">
                                 <img class="rounded-circle m-auto" src="img/me.jpg" alt="My profile picture" />
                                 <h3 class="m-0 p-0">About Me</h3>
                                 <small>A photo of me in 2020</small>
                             </div>
-                            <p class="text-justify indent-first">Hello, I'm John, a Web Developer with a degree in Mechanical Engineering, which honed my analytical thinking. After working in the field for over a year, I shifted gears to explore opportunities in the tech industry.</p>
-                            <p class="text-justify indent-first">I love coding from scratch, bringing ideas to life through functional applications. I'm eager to learn more and perhaps even bridge the gap between software and mechanical engineering someday. Let's collaborate and create something amazing!</p>
+                            <p class="text-justify">Hello, I'm John Dennis Vistal, a <span class="custom-bold">Web Developer</span> with a degree in Mechanical Engineering. After graduating, I worked in the field for over a year, and then I shifted gears to explore opportunities in the tech industry.</p>
+                            <p class="text-justify">"Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less." - Marie Curie</p>
+                            <p class="text-justify">Embracing the words of Marie Curie, 'Nothing in life is to be feared, it is only to be understood'. This philosophy guides my approach to my day-to-day life, allowing me to face challenges with curiosity.</p>
                         </div>
                         <div id="contact" class="col-12 col-lg-6 p-4">
+                            <p type="button" class="btn-close max-right d-none d-md-block" data-bs-dismiss="modal" aria-label="Close"></p>
                             <h3 class="m-auto p-0 text-light text-center">Contact Me</h3>
+                            <div id="emailHelp" class="form-text text-light">Information input here will not be shared. It will be saved on a secure server and will be deleted after a month.</div>
                             <form id="contactMeForm">
                                 <div class="mb-3">
                                     <label for="namefield" class="form-label text-light">Name</label>
@@ -73,7 +157,6 @@
                                 <div class="mb-3">
                                     <label for="emailfield" class="form-label text-light">Email address</label>
                                     <input name="email" type="email" class="form-control" id="emailfield" aria-describedby="emailHelp">
-                                    <div id="emailHelp" class="form-text text-light">I'll never share your email with anyone else.</div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="subjectfield" class="form-label text-light">Subject</label>
@@ -96,7 +179,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Modal title</h5>
+                        <h5 class="modal-title">Email Status</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                 <div class="modal-body">
@@ -112,7 +195,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Modal title</h5>
+                        <h5 class="modal-title">Email Status</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                 <div class="modal-body">

@@ -36,6 +36,7 @@ $('#contactMeForm').submit(function(event) {
             }
         },
         error: function(xhr, status, error) {
+            $('#failed').modal('show');
             console.error('Request failed:', status, error);
         }
     });

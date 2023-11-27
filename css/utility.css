@@ -9,7 +9,12 @@
 
 @font-face{
     font-family: 'header-font';
-    src: url('../texts/static/KantumruyPro-Thin.ttf') format('truetype');
+    src: url('../texts/KantumruyPro-Thin.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'titles-font';
+    src: url('../texts/Kanit-Light.ttf') format('truetype');
 }
 
 .smooch-texts{
@@ -26,6 +31,11 @@
 
 .font-header{
     font-family: "header-font", sans-serif;
+}
+
+.font-header-bold{
+    font-family: "header-font", sans-serif;
+    font-weight: bolder;
 }
 
 /* Buttons */
@@ -68,4 +78,17 @@
     background: linear-gradient(45deg, #ffffff 50%, transparent 50%);
     background-position: 100%;
     background-size: 400%;
+}
+
+.custom-bold{
+    font-weight: bold;
+}
+
+.max-right{
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.titles-r-text{
+    font-family: "titles-font", sans-serif;
 }
