@@ -29,25 +29,23 @@
 }
 
 /* Buttons */
-.button{
+.button, .button-white{
     text-decoration: none;
     color: white;
     padding: 10px 20px;
     border: 1px solid rgb(255, 255, 173);
     border-radius: 5px;
     font-weight: 600;
-}
-
-.button {
-    border-color: #f1c40f;
-    color: #fff;
-    background: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
-    background-position: 100%;
-    background-size: 400%;
     transition: background 300ms ease-in-out;
 }
 
-.button:hover {
+.button{
+    background: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+}
+
+.button:hover, .button-white:hover {
     background-position: 0%;
     color: black;
 }
@@ -66,5 +64,8 @@
     text-align: center;
 }
 
-
-
+.button-white {
+    background: linear-gradient(45deg, #ffffff 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+}

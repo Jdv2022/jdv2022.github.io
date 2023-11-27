@@ -79,11 +79,11 @@ header{
 |   Modal
 */
 #about{
-    background-image: url('../img/aboutMe.png');
+    background-color: rgb(234, 234, 234);
 }
 #aboutContainer{
     width: 50%;
 }
 #contact{
-    background-image: url('../img/contact.png');
+    background-color: #635e16;
 }
