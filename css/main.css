@@ -8,7 +8,7 @@
 /* 
 |   Commons
 */
-header, #about, #contact, #section-experience{
+header, #about, #contact, #section-experience, #section-projects, #section-skills{
     background-position: center;
     background-repeat: none;
     background-size: cover;
@@ -88,9 +88,10 @@ header{
     position: relative;
     border: 2px solid transparent;
     z-index: 1;
+    height: 600px;
 }
 
-.blur-bg::before {
+.blur-bg::before{
     content: attr(data-label);
     position: absolute;
     top: -20px;
@@ -109,6 +110,16 @@ header{
     color: white;
     background-color: rgba(128, 128, 128, 0.485);
     backdrop-filter: blur(10px);
+    overflow-y: auto;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.glass::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.glass{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 .expi-card > h3{
@@ -124,6 +135,36 @@ header{
 
 .expi-card > p{
     font-size: 1rem;
+}
+/* 
+|   Section projects
+*/
+#section-projects{
+    min-height: 100vh;
+    background-image: url('../img/project-bg.png');
+}
+
+.proj-card{
+    height: 590px;
+}
+
+/* 
+|   Section skills
+*/
+#section-skills{
+    min-height: 80vh;
+    background-image: url('../img/skills-bg.png');
+}
+/* 
+| Footer
+*/
+footer{
+    min-height: 20vh;
+    background-color: rgb(24, 24, 0);
+}
+
+#footer-icons{
+    display: flex;
 }
 
 /* 

@@ -92,3 +92,11 @@
 .titles-r-text{
     font-family: "titles-font", sans-serif;
 }
+
+.opac-0{
+    background-color: rgba(128, 128, 128, 0);
+}
+
+.custom-width-200px{
+    width: 200px;
+}

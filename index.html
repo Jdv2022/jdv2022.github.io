@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
+
         <meta charset = "UTF-8">
         <meta name = "viewport" content= "width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv = "X-UA-Compatible" content = "IE = edge,chrome = 1">
@@ -35,8 +36,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <span class="me-auto mb-2 mb-lg-0"></span>
                     <a href="#section-experience" class="mx-3 text-decoration-none d-block d-lg-inline nav-r-text mt-2 mt-lg-0">.experience()</a>
-                    <a href="#" class="mx-3 text-decoration-none d-block d-lg-inline nav-r-text mt-2 mt-lg-0">.projects()</a>
-                    <a href="#" class="mx-3 text-decoration-none d-block d-lg-inline nav-r-text mt-2 mt-lg-0">.skills()</a>
+                    <a href="#section-projects" class="mx-3 text-decoration-none d-block d-lg-inline nav-r-text mt-2 mt-lg-0">.projects()</a>
+                    <a href="#section-skills" class="mx-3 text-decoration-none d-block d-lg-inline nav-r-text mt-2 mt-lg-0">.skills()</a>
                 </div>
             </div>
         </nav>
@@ -55,7 +56,7 @@
         <!-- Main -->
         <main>
             <!-- Section Experience -->
-            <div id="section-experience" >
+            <section id="section-experience" >
                 <div class="pt-5 pb-5 p-5">
                     <h2 class="mb-5 titles-r-text text-light">Jdv2022.experience()</h2>
                     <div class="row row-cols-1 row-cols-md-4 g-4">
@@ -120,15 +121,140 @@
                             <div class="card h-100 glass">
                                 <div class="card-body expi-card">
                                     <h3>Self Study</h3>
-                                    <h4>Career Break/Shift</h4>The practice of mechanical engineering revolves around physics while software development on logic. The shift in my career path has a lot of challenges but rich in learning experiences. During this phase, I dedicated myself to a period of intensive self-study, aiming to broaden my skill set and delve into the realm of programming fundamentals.</p>
+                                    <h4>Career Break/Shift</h4>The practice of mechanical engineering revolves around physics while software development on logic. The shift in my career path has a lot of challenges but rich in learning experiences. During this phase, I dedicated myself to a period of intensive self-study, aiming to broaden my skill set.</p>
                                     <p class="card-text">This learning journey was a gateway to understanding the logic behind software development. It was a period of self-discovery, where I honed my problem-solving skills and cultivated a strong foundation in coding principles.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <!-- Section Projects -->
+            <section id="section-projects">
+                <div class="pt-5 pb-5 p-5">
+                    <h2 class="mb-5 titles-r-text text-light">Jdv2022.projects()</h2>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100 glass p-2">
+                                <img src="img/recipebook.png" class="card-img-top" alt="recipebook">
+                                <div class="card-body">
+                                    <h5 class="card-title">Recipebook</h5>
+                                    <p class="card-text">A simple PHP project. User without an account can view recipes and profiles, but cannot comment, rate, create and edit. User needs to register to create an account. Registered users can upload images.</p>
+                                </div>
+                                <ul class="list-group list-group-flush border-0">
+                                    <li class="list-group-item opac-0 text-light">Technology: <span class="custom-bold">Laravel, Nginx, Jquery, Bootstrap, MYSQL</span></li>
+                                    <li class="list-group-item opac-0 text-light">Project code: <a href="https://github.com/Jdv2022/recipebook" class="text-decoration-none" target="_blank"><span class="custom-bold">https://github.com/Jdv2022/recipebook</span></a></li>
+                                    <li class="list-group-item opac-0 text-light">Project link: <a href="https://jdv2022-projects.tech/" class="text-decoration-none" target="_blank"><span class="custom-bold">https://jdv2022-projects.tech/</span></a></li>
+                                </ul>
+                                <div class="card-body"></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 glass p-2">
+                                <img src="img/chartgenerator.png" class="card-img-top" alt="recipebook">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chart Generator</h5>
+                                    <p class="card-text">A single page application that generates a chart base on the user selection. Can upload file with .csv and .xlxs formats. The purpose of this project is to make chart creation simpler.</p>
+                                </div>
+                                <ul class="list-group list-group-flush border-0">
+                                    <li class="list-group-item opac-0 text-light">Technology: <span class="custom-bold">React, HTML, CSS, D3.JS</span></li>
+                                    <li class="list-group-item opac-0 text-light">Project code: <a href="https://github.com/Jdv2022/excelProject" class="text-decoration-none" target="_blank"><span class="custom-bold">https://github.com/Jdv2022/excelProject</span></a></li>
+                                    <li class="list-group-item opac-0 text-light">Project link: <a href="https://excel2charts.online/" class="text-decoration-none" target="_blank"><span class="custom-bold">https://excel2charts.online/</span></a></li>
+                                </ul>
+                                <div class="card-body"></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 glass p-2">
+                                <img src="img/admin.png" class="card-img-top" alt="recipebook">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chart Generator Admin</h5>
+                                    <p class="card-text">This application listens to Chart Generator project. This provides insightful illustration to the number of visitor that visited the site. It shows the total visitor per day, hour and total.</p>
+                                </div>
+                                <ul class="list-group list-group-flush border-0">
+                                    <li class="list-group-item opac-0 text-light">Technology: <span class="custom-bold">CodeIgniter, MYSQL, NGINX, Docker</span></li>
+                                    <li class="list-group-item opac-0 text-light">Project code: <a href="https://github.com/Jdv2022/excelProject" class="text-decoration-none" target="_blank"><span class="custom-bold">https://github.com/Jdv2022/excelProject</span></a></li>
+                                    <li class="list-group-item opac-0 text-light">Project link: <a href="https://excel2charts.online/admin" class="text-decoration-none" target="_blank"><span class="custom-bold">https://excel2charts.online/admin</span></a></li>
+                                </ul>
+                                <div class="card-body"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section skills -->
+            <section id="section-skills">
+                <div class="pt-5 pb-5 p-5">
+                    <h2 class="mb-5 titles-r-text text-dark">Jdv2022.skills()</h2>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-browser-chrome mb-5" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M16 8a8.001 8.001 0 0 1-7.022 7.94l1.902-7.098a2.995 2.995 0 0 0 .05-1.492A2.977 2.977 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8M0 8a8 8 0 0 0 7.927 8l1.426-5.321a2.978 2.978 0 0 1-.723.255 2.979 2.979 0 0 1-1.743-.147 2.986 2.986 0 0 1-1.043-.7L.633 4.876A7.975 7.975 0 0 0 0 8m5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a2.979 2.979 0 0 0-1.252.243 2.987 2.987 0 0 0-1.81 2.59ZM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+                            </svg>
+                            <h3 class="pb-3">Front-End Developer</h3>
+                            <h5>Design and Develop UI</h5>
+                            <p>HTML, CSS and JavaScript</p>
+                            <h5>Front-End Functions</h5>
+                            <p>jQuery and D3.js</p>
+                            <h5>UI Framework</h5>
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="col text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-hdd-rack-fill mb-5" viewBox="0 0 16 16">
+                                <path d="M2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h1v2H2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2h-1V7h1a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm.5 3a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m2 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m-2 7a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m2 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1M12 7v2H4V7z"/>
+                            </svg>
+                            <h3 class="pb-3">Back-End Developer</h3>
+                            <h5>Application Server</h5>
+                            <p>PHP, CodeIgniter, Laravel</p>
+                            <h5>API</h5>
+                            <p>REST API, JSON API, Postman</p>
+                            <h5>Database</h5>
+                            <p>MYSQL</p>
+                            <h5>Minimum knowledge on</h5>
+                            <p>Nginx, Apache</p>
+                        </div>
+                        <div class="col text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-info-square-fill mb-5" viewBox="0 0 16 16">
+                                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                            </svg>
+                            <h3 class="pb-3">Others</h3>
+                            <h5>Version Control</h5>
+                            <p>Github</p>
+                            <h5>API</h5>
+                            <p>Task Management</p>
+                            <h5>Trello</h5>
+                            <p>MYSQL</p>
+                            <h5>Minimum knowledge on</h5>
+                            <p>Docker</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
+        <footer>
+            <div id="footer-icons">
+                <div class="custom-width-200px m-auto d-flex justify-content-between my-4">
+                    <a href="mailto:johnden.vistal@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                            <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+                            <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Jdv2022" target="__blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/john-dennis-vistal-42a69b291/" target="__blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <p class="m-0 text-center text-light">© 2023 johnden | Design influenced by rmarasigan</p>
+            <p class="m-0 text-center text-light">Made with Bootstrap(UI), Node.js(Back-End) and MySQL.</p>
+        </footer>
         <!-- MODALS -->
         <div class="modal fade" id="aboutMe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
