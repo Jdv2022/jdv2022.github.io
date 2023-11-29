@@ -179,3 +179,26 @@ footer{
 #contact{
     background-color: #635e16;
 }
+
+/* 
+|   Scroll bar
+*/
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+    width: 10px; /* Adjust the width as needed */
+}
+
+/* Track (the area on which the thumb drags) */
+::-webkit-scrollbar-track {
+    background: white; /* Change the track color */
+}
+
+/* Handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: yellow; /* Change the color of the scrollbar */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555555; /* Change the color on hover */
+}
